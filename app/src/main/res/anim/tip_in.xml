@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:Android="http://schemas.android.com/apk/res/android">
+    <scale
+        Android:duration="300"
+        Android:fromXScale="0.1"
+        Android:fromYScale="0.1"
+        Android:interpolator="@android:anim/decelerate_interpolator"
+        Android:pivotX="50%"
+        Android:pivotY="50%"
+        Android:toXScale="1"
+        Android:toYScale="1" />
+</set>

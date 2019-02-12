@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    tools:context="com.app.xuzheng.mynote.Activity.HideActivity">
+
+    <!-- 这个隐藏按钮放哪也无所谓，因为当这个按钮弹出时，输入法也弹出，处于输入状态，本身背景也不允许点击 -->
+    <EditText
+        android:id="@+id/mHideInput"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:cursorVisible="false"
+        android:textColor="#00000000"
+        android:gravity="bottom" />
+</FrameLayout>

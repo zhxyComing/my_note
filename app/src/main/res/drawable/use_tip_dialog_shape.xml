@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--dialog的自定义背景框  给布局设置的一个背景shape而已-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <solid android:color="#ffffff" />
+    <stroke
+        android:width="0.8dp"
+        android:color="#ffffff" />
+    <!-- 圆角 -->
+    <corners android:radius="6dp" />
+
+</shape>

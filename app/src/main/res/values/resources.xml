@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TimeView">
+        <attr name="rect_background" format="color" />
+        <attr name="circle_background" format="color" />
+        <attr name="num_in_color" format="color" />
+        <attr name="num_out_color" format="color" />
+        <attr name="center_circle_color" format="color" />
+        <attr name="circle_target_color" format="color" />
+        <attr name="circle_follow_color" format="color" />
+        <attr name="follow_length_scale" format="integer" />
+        <attr name="follow_speed_scale" format="integer" />
+        <attr name="follow_show" format="boolean" />
+        <attr name="text_color" format="color" />
+    </declare-styleable>
+</resources>

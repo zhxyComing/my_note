@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Button正常状态下的背景 -->
+    <item android:drawable="@drawable/circle_btn_clock_normal" android:state_checked="false" />
+    <!-- Button按下时的背景 -->
+    <item android:drawable="@drawable/circle_btn_clock_press" android:state_checked="true" />
+</selector>

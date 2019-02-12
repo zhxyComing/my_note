@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:background="@color/colorPrimaryLight"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:text="★ 待办事项"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:textSize="@dimen/app_item_text_size_hide" />-->
+
+    <!--&lt;!&ndash;<View&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="2px"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginRight="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="#666666" />&ndash;&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/testItem1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/testItemIv1"-->
+    <!--android:layout_width="8dp"-->
+    <!--android:layout_height="8dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:src="@drawable/specially_note_complete_yet" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="事项XXXX1"-->
+    <!--android:textSize="@dimen/app_item_text_size_hide" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:background="#CCCCCC" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="8dp"-->
+    <!--android:layout_height="8dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:src="@drawable/specially_note_complete_yet" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="事项XXXX2"-->
+    <!--android:textSize="@dimen/app_item_text_size_hide" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:background="#CCCCCC" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="8dp"-->
+    <!--android:layout_height="8dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:src="@drawable/specially_note_complete_yet" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="事项XXXX3"-->
+    <!--android:textSize="@dimen/app_item_text_size_hide" />-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="12dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@drawable/btn_corner"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--android:text="便签速览"-->
+        <!--android:textSize="@dimen/app_item_text_size_hide" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSlide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

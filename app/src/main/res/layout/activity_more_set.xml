@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_tool_bar_common" />
+
+    <!-- 目前这部分代码太过繁复，之后等item增多会换成listView的形式 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/contentBackground">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="?attr/colorCardBackground"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="功能列表"
+                            android:textColor="?attr/colorBlackGrayText"
+                            android:textSize="@dimen/app_item_text_size_hide"
+                            android:typeface="serif" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="1dp"
+                            android:background="?attr/colorCardItemBackground"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvClock"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="闹铃提醒"
+                                android:textColor="?attr/colorBlackText"
+                                android:textSize="@dimen/app_item_text_size_small" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="定制便签提醒"
+                                android:textColor="?attr/colorBlackGrayText"
+                                android:textSize="@dimen/app_item_text_size_hide" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvAllClock"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="1dp"
+                            android:background="?attr/colorCardItemBackground"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="闹铃提醒查看"
+                            android:textColor="?attr/colorBlackText"
+                            android:textSize="@dimen/app_item_text_size_small" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="1dp"
+                            android:background="?attr/colorCardItemBackground"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvOpenSlide"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="速览侧边栏(隐身便签)"
+                                android:textColor="?attr/colorBlackText"
+                                android:textSize="@dimen/app_item_text_size_small" />
+
+                            <Switch
+                                android:id="@+id/swOpenSlide"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="?attr/colorCardBackground"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="通用设置"
+                            android:textColor="?attr/colorBlackGrayText"
+                            android:textSize="@dimen/app_item_text_size_hide"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tvClockSet"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="1dp"
+                            android:background="?attr/colorCardItemBackground"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="闹铃设置"
+                            android:textColor="?attr/colorBlackText"
+                            android:textSize="@dimen/app_item_text_size_small" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="1dp"
+                            android:background="?attr/colorCardItemBackground"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvTheme"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="主题更换"
+                                android:textColor="?attr/colorBlackText"
+                                android:textSize="@dimen/app_item_text_size_small" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:gravity="center"
+                                android:text="回炉重制中"
+                                android:textColor="?attr/colorBlackGrayText"
+                                android:textSize="@dimen/app_item_text_size_hide" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="1dp"
+                            android:background="?attr/colorCardItemBackground"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tvHideDesktop"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="1dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:text="显示桌签"
+                                android:textColor="?attr/colorBlackText"
+                                android:textSize="@dimen/app_item_text_size_small" />
+
+                            <Switch
+                                android:id="@+id/swHideDesktop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvAbout"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="1dp"
+                            android:background="?attr/colorCardItemBackground"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="关于应用"
+                            android:textColor="?attr/colorBlackText"
+                            android:textSize="@dimen/app_item_text_size_small" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardBackgroundColor="?attr/colorCardBackground"
+                    app:cardElevation="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="安全设置"
+                            android:textColor="?attr/colorBlackGrayText"
+                            android:textSize="@dimen/app_item_text_size_hide"
+                            android:typeface="serif" />
+
+
+                        <TextView
+                            android:id="@+id/tvPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="?attr/colorCardItemBackground"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="10dp"
+                            android:text="密码保险设置"
+                            android:textColor="?attr/colorBlackText"
+                            android:textSize="@dimen/app_item_text_size_small" />
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="为了更好的使用体验，推荐锁定程序，以防小便签处于后台时被系统关闭。"
+                    android:textColor="?attr/colorBlackGrayText"
+                    android:textSize="@dimen/app_item_text_size_hide" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/returnList"
+            style="@style/CircleView"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/circle_btn_exit_bg"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="返回列表" />
+    </FrameLayout>
+
+</LinearLayout>

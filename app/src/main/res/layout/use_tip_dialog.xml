@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--dialog的布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpTip"
+        android:layout_width="220dp"
+        android:layout_height="420dp"></android.support.v4.view.ViewPager>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+    <ImageView
+        android:id="@+id/ivCloseTip"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/exit_tip" />
+</LinearLayout>

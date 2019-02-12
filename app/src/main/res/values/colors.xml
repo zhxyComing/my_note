@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#03a9f4</color>
+    <color name="translucent_background">#00000000</color>
+    <color name="back_color">#C5CAE9</color>
+    <color name="item_back__color">#F5F5F5</color>
+    <color name="top_bar_color">#039BE5</color>
+    <color name="text_color">#212429</color>
+    <color name="hide_color">#999999</color>
+    <color name="hide_color_light">#cccccc</color>
+
+    <!--App主题配色-->
+    <!-- attr contentBackground -->
+    <color name="bg_color_light">#dddddd</color>
+    <color name="bg_color_night">#666666</color>
+
+    <!-- attr colorMain -->
+    <color name="colorPrimary">#78909C</color>
+    <color name="colorPrimaryNight">#37474F</color>
+    <color name="colorPrimaryOrange">#FF9800</color>
+
+    <!-- attr colorMainLight -->
+    <color name="colorPrimaryLight">#B0BEC5</color>
+    <color name="colorPrimaryLightNight">#455A64</color>
+    <color name="colorPrimaryLightOrange">#FFB74D</color>
+
+    <!-- attr colorMainDark -->
+    <color name="colorPrimaryDark">#78909C</color>
+    <color name="colorPrimaryDarkNight">#263238</color>
+    <color name="colorPrimaryDarkOrange">#FF9800</color>
+
+    <!-- attr colorWhiteText -->
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorTextWhiteNight">#999999</color>
+
+    <!-- attr colorWhiteGrayText -->
+    <color name="colorTextGrayWhite">#EEEEEE</color>
+    <color name="colorTextGrayWhiteNight">#888888</color>
+
+    <!-- attr colorCardBackground -->
+    <color name="colorCardBackground">#FFFFFF</color>
+    <color name="colorCardBackgroundNight">#9E9E9E</color>
+
+    <!-- attr colorCardItemBackground -->
+    <color name="colorCardItemBackground">#EEEEEE</color>
+    <color name="colorCardItemBackgroundNight">#9E9E9E</color>
+
+    <!-- attr colorBlackText -->
+    <color name="colorBlackText">#666666</color>
+    <color name="colorBlackTextNight">#CCCCCC</color>
+
+    <!-- attr colorBlackGrayText-->
+    <color name="colorBlackGrayText">#999999</color>
+    <color name="colorBlackGrayTextNight">#CFD8DC</color>
+</resources>

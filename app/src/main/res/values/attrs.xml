@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="contentBackground" format="reference|color" />
+    <attr name="colorMain" format="reference|color" />
+    <attr name="colorMainLight" format="reference|color" />
+    <attr name="colorMainDark" format="reference|color" />
+    <attr name="colorWhiteText" format="reference|color" />
+    <attr name="colorWhiteGrayText" format="reference|color" />
+    <attr name="colorCardBackground" format="reference|color" />
+    <attr name="colorCardItemBackground" format="reference|color" />
+    <attr name="colorBlackText" format="reference|color" />
+    <attr name="colorBlackGrayText" format="reference|color" />
+</resources>

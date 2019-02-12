@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_light"
+    android:orientation="vertical"
+    tools:context="com.app.xuzheng.mynote.Activity.AllClockActivity">
+
+    <include layout="@layout/action_tool_bar_common" />
+
+    <TextView
+        android:id="@+id/tvClockTip"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="还没有设置过闹铃提醒哦~"
+        android:textColor="#999999"
+        android:textSize="@dimen/app_item_text_size_small" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvAllClick"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

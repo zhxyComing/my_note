@@ -1,0 +1,171 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+
+    <style name="translucent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="StartBackGroundTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/background</item>
+    </style>
+
+    <!--提示Dialog风格，设置给自定义Dialog-->
+    <style name="UseTipDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="TipAnim">
+        <item name="android:windowEnterAnimation">@anim/tip_in</item>
+        <item name="android:windowExitAnimation">@anim/tip_out</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CircleView">
+        <item name="android:textSize">@dimen/circle_view_text_size</item>
+        <item name="android:layout_width">@dimen/circle_view_width</item>
+        <item name="android:layout_height">@dimen/circle_view_width</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:textColor">?attr/colorWhiteText</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AppItem">
+        <item name="android:textSize">@dimen/app_item_text_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:background">#eeeeee</item>
+    </style>
+
+    <style name="AccountSaveItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">@dimen/app_item_text_size_hide</item>
+        <item name="android:background">@drawable/btn_pass_bg</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ClockWeekItem">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/circle_btn_clock_bg</item>
+        <item name="android:textColor">@color/circle_btn_clock_text_color</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- 多种主题 -->
+    <!-- 主题的设置：1.attrs定义属性 2.style定义属性对应颜色 3.xml利用属性设置颜色而非直接利用颜色 (setTheme只能在onCreate之前) -->
+    <style name="ThemeNormal" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--大背景色-->
+        <item name="contentBackground">@color/bg_color_light</item>
+        <!--主色调-->
+        <item name="colorMain">@color/colorPrimary</item>
+        <!--主色调偏亮-->
+        <item name="colorMainLight">@color/colorPrimaryLight</item>
+        <!--主色调偏暗-->
+        <item name="colorMainDark">@color/colorPrimaryDark</item>
+        <!--白色文字-->
+        <item name="colorWhiteText">@color/colorTextWhite</item>
+        <!--白色文字偏暗-->
+        <item name="colorWhiteGrayText">@color/colorTextGrayWhite</item>
+        <!--卡片背景色-->
+        <item name="colorCardBackground">@color/colorCardBackground</item>
+        <!--卡片里的item背景色-->
+        <item name="colorCardItemBackground">@color/colorCardItemBackground</item>
+        <!--黑色文字-->
+        <item name="colorBlackText">@color/colorBlackText</item>
+        <!--黑色文字偏灰-->
+        <item name="colorBlackGrayText">@color/colorBlackGrayText</item>
+    </style>
+
+    <!--暗色主题-->
+    <style name="ThemeDark" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryNight</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="contentBackground">@color/bg_color_night</item>
+        <item name="colorMain">@color/colorPrimaryNight</item>
+        <item name="colorMainLight">@color/colorPrimaryLightNight</item>
+        <item name="colorMainDark">@color/colorPrimaryDarkNight</item>
+        <item name="colorWhiteText">@color/colorTextWhiteNight</item>
+        <item name="colorWhiteGrayText">@color/colorTextGrayWhiteNight</item>
+        <item name="colorCardBackground">@color/colorCardBackgroundNight</item>
+        <item name="colorCardItemBackground">@color/colorCardItemBackgroundNight</item>
+        <item name="colorBlackText">@color/colorBlackTextNight</item>
+        <item name="colorBlackGrayText">@color/colorBlackGrayTextNight</item>
+    </style>
+
+    <!--ORANGE主题 还未开发完 需要以往的颜色全部变更为attr ...以后工程构建前就应该做好...-->
+    <style name="ThemeOrange" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryOrange</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkOrange</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--大背景色-->
+        <item name="contentBackground">@color/bg_color_light</item>
+        <!--主色调-->
+        <item name="colorMain">@color/colorPrimary</item>
+        <!--主色调偏亮-->
+        <item name="colorMainLight">@color/colorPrimaryLight</item>
+        <!--主色调偏暗-->
+        <item name="colorMainDark">@color/colorPrimaryDark</item>
+        <!--白色文字-->
+        <item name="colorWhiteText">@color/colorTextWhite</item>
+        <!--白色文字偏暗-->
+        <item name="colorWhiteGrayText">@color/colorTextGrayWhite</item>
+        <!--卡片背景色-->
+        <item name="colorCardBackground">@color/colorCardBackground</item>
+        <!--卡片里的item背景色-->
+        <item name="colorCardItemBackground">@color/colorCardItemBackground</item>
+        <!--黑色文字-->
+        <item name="colorBlackText">@color/colorBlackText</item>
+        <!--黑色文字偏灰-->
+        <item name="colorBlackGrayText">@color/colorBlackGrayText</item>
+    </style>
+</resources>
